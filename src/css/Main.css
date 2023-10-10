@@ -1,0 +1,17 @@
+.titulo{
+ color:black;
+}
+.caja{
+    /*color:black;
+    border: solid 1px black;
+    background-color: whitesmoke;
+    border:5px solid black;
+    margin-right: 500px;
+    margin-left: 500px;*/
+    box-sizing: border-box;
+    width: 50%; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    border:5px solid black;
+}
