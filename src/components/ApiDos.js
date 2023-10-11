@@ -21,15 +21,19 @@ class ApiDos extends Component {
   }
 
   traerGifNuevo() {
-    
-    this.apiCall(/*"https://veganit-omlm.onrender.com/users/api"*//*"https://pokeapi.co/api/v2/pokemon/ditto"*/"https://veganit-omlm.onrender.com/products/api", this.mostrarGif);
-   
-    /*console.log(mostrarGif)*/
-  }
+    const url = `https://veganit-omlm.onrender.com/products/api?timestamp=${new Date().getTime()}`;
+   /*this.apiCall("https://veganit-omlm.onrender.com/users/api", this.mostrarGif);*/
+   this.apiCall(url, this.mostrarGif);
+  
+ }
   mostrarGif = data => {
     this.setState({
       gif: data.total
     });
+  }
+  actualizarGif =()=>{
+  this.traerGifNuevo();
+  alert("actualizado a los datos más recientes")
   }
 
 
@@ -44,7 +48,7 @@ class ApiDos extends Component {
     return (
       <div>
         {contenido}
-        <button onClick={() => this.traerGifNuevo()/*console.log(this.state.gif)*/}>Actualizar</button>
+        <button onClick={this.actualizarGif/*() => this.traerGifNuevo()*//*console.log(this.state.gif)*/}>Actualizar</button>
       </div>
     );
   }
