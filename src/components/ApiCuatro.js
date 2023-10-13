@@ -31,7 +31,12 @@ class ApiCuatro extends Component {
     if (data.data) {
       const ultimoProducto = data.data;
       this.setState({
-        gif: ultimoProducto.nombre, // Cambia "nombre" al atributo que deseas mostrar
+        gif: /*ultimoProducto.nombre, */(
+          <div>
+            <p>Nombre: {ultimoProducto.nombre}</p>
+            <img width="125px" src={ultimoProducto.imagen} alt={ultimoProducto.nombre} />
+          </div>
+        ),
       });
     }
   }

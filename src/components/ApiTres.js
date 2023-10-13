@@ -31,7 +31,12 @@ class ApiTres extends Component {
     if (data.data) {
       const ultimoUsuario = data.data;
       this.setState({
-        gif: ultimoUsuario.nombre, // Cambia "nombre" al atributo que deseas mostrar
+        gif: /*ultimoUsuario.nombre,*/(
+          <div>
+            <p>Nombre: {ultimoUsuario.nombre}</p>
+            <img width="125px" src={ultimoUsuario.imagen} alt={ultimoUsuario.nombre} />
+          </div>
+        ),
       });
     }
   }

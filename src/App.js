@@ -5,10 +5,12 @@ import Footer from './components/Footer';
 import Caja from './components/Caja';
 import CajaDos from './components/CajaDos';
 import CajaTres from './components/CajaTres';
+import Saltopag from './components/saltopag';
 import ApiUno from './components/ApiUno';
 import ApiDos from './components/ApiDos';
 import ApiTres from './components/ApiTres';
 import ApiCuatro from './components/ApiCuatro';
+import ApiCinco from './components/ApiCinco';
 
 function App() {
   return (
@@ -30,14 +32,11 @@ function App() {
   
   <CajaDos titulo="USUARIO" numero={<ApiTres/>}/>
   <CajaDos titulo="PRODUCTO" numero={<ApiCuatro/>}/>
-  <CajaTres titulo="ECONOMICO" numero= "undefined"/>
+  <CajaTres titulo="ECONOMICO" numero= {<ApiCinco/>}/>
 
    </div>
-        <br/>
        </main>
-       <br/>
-       <br/>
-       <br/>   
+      <Saltopag/>  
        <footer className='footer'> 
       <Footer/>
       </footer>
