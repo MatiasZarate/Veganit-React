@@ -5,7 +5,10 @@ import Footer from './components/Footer';
 import Caja from './components/Caja';
 import CajaDos from './components/CajaDos';
 import CajaTres from './components/CajaTres';
-import Saltopag from './components/saltopag';
+/*import Saltopag from './components/saltopag'; fila entre main y footer*/
+/*<div className='extra'> 
+       <Saltopag/>
+       </div> */
 import ApiUno from './components/ApiUno';
 import ApiDos from './components/ApiDos';
 import ApiTres from './components/ApiTres';
@@ -19,7 +22,7 @@ function App() {
         <Header/>
       </header>
       <main className='main'> 
-        <Main/>
+        <Main titulo="PANELES SIMPLES"/>
        <br/>
        <div className='container'> 
   
@@ -28,6 +31,7 @@ function App() {
       <Caja titulo="PRODUCTOS" numero= {<ApiDos/>}/>
        </div>
        <div class="raya"> . </div>
+       <Main titulo="PANELES CON DATOS"/>
        <div className='container'> 
   
   <CajaDos titulo="USUARIO" numero={<ApiTres/>}/>
@@ -35,8 +39,9 @@ function App() {
   <CajaTres titulo="ECONOMICO" numero= {<ApiCinco/>}/>
 
    </div>
+    
        </main>
-      <Saltopag/>  
+       
        <footer className='footer'> 
       <Footer/>
       </footer>

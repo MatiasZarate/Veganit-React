@@ -1,11 +1,11 @@
 import React from 'react';
 import "../css/Main.css"
 
-function Main (){
+function Main (props){
     return (
-		<a  href="/">
-			<h1 className="titulo"> PANELES SIMPLES </h1>
-			</a>
+		<div>
+			<h1 className="titulo"> {props.titulo} </h1>
+			</div>
     )
 }
 

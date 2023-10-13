@@ -4,9 +4,9 @@ import "../css/Footer.css"
 function Footer (){
     return (
 			
-			<a href="/">
-			<h1 className="titulo"> copyright </h1>
-			</a>
+			<div>
+			<h1 className="titulo"> Copyright © Dashboard 2023 </h1>
+			</div>
 
 			
 		

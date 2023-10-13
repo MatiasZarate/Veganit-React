@@ -1,7 +1,7 @@
 import React from 'react';
 import "../css/Main.css"
 
-function Saltopag (props){
+function Saltopag (){
     return (
 		
             <div > 
@@ -13,6 +13,12 @@ function Saltopag (props){
        <br/> 
        <br/> 
        <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+     
             </div>
 		
     )

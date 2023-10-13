@@ -4,10 +4,10 @@ import "../css/Header.css"
 function Header (){
     return (
 			
-			<a href="/">
+			<div>
 		       <h1 className="titulo">DASHBOARD VEGANIT </h1>
 			
-			</a>
+			</div>
 
 			
 		
