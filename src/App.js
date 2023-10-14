@@ -16,6 +16,7 @@ import ApiCuatro from './components/ApiCuatro';
 import ApiCinco from './components/ApiCinco';
 
 function App() {
+  
   return (
     <div className="App">
       <header className='header'> 
@@ -26,25 +27,29 @@ function App() {
        <br/>
        <div className='container'> 
   
-      <Caja titulo="USUARIOS" numero={<ApiUno/>}/>
+      <Caja titulo="USUARIOS" numero={<ApiUno/>} icon={<i className="fa-solid fa-user"></i>}/>
     
-      <Caja titulo="PRODUCTOS" numero= {<ApiDos/>}/>
+      <Caja titulo="PRODUCTOS" numero= {<ApiDos/>} icon={<i className="fa-solid fa-bag-shopping"></i>}/>
        </div>
        <div class="raya"> . </div>
        <Main titulo="PANELES CON DATOS"/>
        <div className='container'> 
+  <CajaDos titulo="USUARIO" numero={<ApiTres/>} icon={<i className="fa-solid fa-person"></i>}/>
+  <CajaDos titulo="PRODUCTO" numero={<ApiCuatro/>} icon={<i className="fa-solid fa-business-time"></i>}/>
+  <CajaTres titulo="ECONOMICO" numero= {<ApiCinco/>} icon={<i className="fa-solid fa-hand-holding-heart"></i>}/>
   
-  <CajaDos titulo="USUARIO" numero={<ApiTres/>}/>
-  <CajaDos titulo="PRODUCTO" numero={<ApiCuatro/>}/>
-  <CajaTres titulo="ECONOMICO" numero= {<ApiCinco/>}/>
 
    </div>
-    
+      
        </main>
        
        <footer className='footer'> 
       <Footer/>
+   
+      
+  
       </footer>
+      
     </div>
   );
 }
